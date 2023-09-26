@@ -1,0 +1,122 @@
+/* style.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5d6e4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.box {
+    background-color: #f8fafa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+.navigation {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #1a4470;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Form Styles */
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Result Styles */
+#result {
+    margin-top: 20px;
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effects */
+button:hover, label:hover, li:hover {
+    color: #007bff;
+}
+
+input[type="text"]:hover, input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+#result:hover {
+    background-color: #e5e5e5;
+    transition: background-color 0.3s ease;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Apply Animation */
+.box {
+    animation: fadeIn 0.5s ease;
+}
